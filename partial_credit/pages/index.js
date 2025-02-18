@@ -187,7 +187,6 @@ export default function Home() {
                     </button>
                 </form>
 
-                {/* Workout Table */}
                 <section className="mt-6">
                     <h2 className="text-xl font-bold text-center">Workout Logs</h2>
                     <table className="min-w-full mt-4 table-auto border-separate border-spacing-0 rounded-lg shadow-md">
