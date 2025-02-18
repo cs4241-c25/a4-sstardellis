@@ -112,8 +112,8 @@ export default function Home() {
 
             </header>
             <main className="w-full max-w-4xl p-4">
-                {/* Form */}
-                <form
+
+                    <form
                     onSubmit={handleSubmit}
                     className="flex flex-col max-w-xl mx-auto p-5 bg-white rounded-lg shadow-lg mt-6"
                 >
