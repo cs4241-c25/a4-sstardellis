@@ -1,6 +1,6 @@
 Workout Logger
 
-http://a4-wilsonwong.glitch.me
+https://a4-sstardellis.glitch.me/auth/github/callback
 
 Summary: Authorization from Passport GitHub was added on top of the Passport Local implementation from the previous assignment. Aside from that, minor fixes have been made to the styling, like the login page.
 
