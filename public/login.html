@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-t from-yellow-500 to-red-600 flex justify-center items-center min-h-screen">
+
+<main class="bg-white p-8 rounded-lg shadow-lg w-96">
+
+    <div class="text-center mb-2">
+        <h1 class="text-3xl font-bold">Workout Logger</h1>
+    </div>
+
+    <header class="text-center mb-6">
+        <h1 class="text-2xl font-bold">Login</h1>
+    </header>
+
+    <!-- shows if the link is ?login-failed -->
+    <div id="error-msg" class="text-red-500 text-center mb-4" style="display: none;">
+        Login is incorrect.
+    </div>
+
+    <form action="/login" method="POST" class="space-y-4">
+        <section>
+            <label for="username" class="block text-gray-700 font-semibold">Username:</label>
+            <input type="text" id="username" name="username" required class="w-full p-3 border rounded-md mt-1">
+        </section>
+        <section>
+            <label for="password" class="block text-gray-700 font-semibold">Password:</label>
+            <input type="password" id="password" name="password" required class="w-full p-3 border rounded-md mt-1">
+        </section>
+        <section>
+            <button type="submit" class="w-full bg-blue-700 text-white py-3 rounded-md hover:bg-blue-800">
+                Login
+            </button>
+        </section>
+        <section class="mt-4">
+            <a href="/auth/github" class="w-full bg-gray-800 text-white py-3 rounded-md hover:bg-gray-900 block text-center">
+                Login with GitHub
+            </a>
+        </section>
+    </form>
+</main>
+
+<script>
+    // show error message if the URL is ?login-failed
+    if (window.location.search.includes("login-failed")) {
+        document.getElementById("error-msg").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
